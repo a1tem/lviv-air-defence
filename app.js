@@ -9,7 +9,8 @@ if (typeof localStorage === "undefined" || localStorage === null) {
 
 // URL of the web page you want to scrape
 const url = "https://t.me/s/kpszsu"; // Replace with the actual URL
-const wordToSearch = 'Харківська';
+// const url = "https://t.me/s/a1temtestchannel";
+const wordToSearch = 'Львів';
 const slimbot = new Slimbot('6620812176:AAEUYAsdxI5lTblmxPlCSO-i4Jam2T37uIo');
 
 // Function to fetch and scrape data
