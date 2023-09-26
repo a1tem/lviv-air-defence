@@ -29,8 +29,8 @@ async function scrapeData() {
     // Iterate over the selected div elements and extract data
     specialDivs.each((index, element) => {
       const message = $(element); // Extract text content from the div
+      const text = message.find(".tgme_widget_message_text").text();
       const postId = message.find(".tgme_widget_message").attr("data-post");
-      const text = $(message.find(".tgme_widget_message_text")[0]).text();
       const date = $(message.find(".time")[0]).attr("datetime");
 
       // Convert the date to a JavaScript Date object
